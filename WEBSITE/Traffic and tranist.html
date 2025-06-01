@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Traffic & Transit | Metro News Network</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body { font-family: 'Segoe UI', sans-serif; background-color: #1b1b1b; color: white; }
+    .top-bar { background-color: #2c2c2c; color: white; font-size: 14px; padding: 4px 20px; display: flex; justify-content: space-between; }
+    nav { background-color: #333; border-bottom: 5px solid red; display: flex; justify-content: center; }
+    nav a { color: white; text-decoration: none; margin: 0 20px; padding: 15px 0; font-weight: bold; border-bottom: 3px solid transparent; }
+    nav a:hover, nav a.active { border-bottom: 3px solid red; }
+    .section-title {
+      border-bottom: 2px solid red;
+      display: inline-block;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 15px;
+      margin-left: 20px;
+      margin-top: 40px;
+    }
+    .traffic-cards {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      gap: 20px;
+      margin: 0 20px 40px 20px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .traffic-cards .card {
+      background-color: #2c2c2c;
+      min-width: 320px;
+      max-width: 350px;
+      flex: 0 0 auto;
+      padding: 15px;
+      border-left: 5px solid red;
+      border-radius: 5px;
+      position: relative;
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .story-image {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 4px 4px 0 0;
+      margin-bottom: 10px;
+      background: #222;
+      display: block;
+    }
+    .label {
+      background: red;
+      color: white;
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 3px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+    .read-button {
+      display: inline-block;
+      background-color: red;
+      padding: 8px 16px;
+      color: white;
+      font-weight: bold;
+      border-radius: 3px;
+      text-decoration: none;
+      margin-top: 10px;
+      align-self: flex-start;
+    }
+    .meta {
+      color: #bbb;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+    .back-link {
+      display: inline-block;
+      margin: 30px 0 0 20px;
+      color: #f44336;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: #fff; text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <div>Vancouver, BC</div>
+    <div>Monday, May 19, 2025</div>
+    <div>Metro News Network</div>
+  </div>
+  <nav>
+    <a href="Untitled-1.html#home">Home</a>
+    <a href="Untitled-1.html#breaking">Breaking News</a>
+    <a href="Untitled-1.html#crime">Crime & Safety</a>
+    <a href="Untitled-1.html#traffic" class="active">Traffic & Transit</a>
+    <a href="Untitled-1.html#local">Local Affairs</a>
+    <a href="Untitled-1.html#weather">Weather</a>
+  </nav>
+
+  <div class="section-title">TRAFFIC & TRANSIT</div>
+  <div class="traffic-cards">
+    <!-- Newest traffic story (add more cards as needed, newest first) -->
+    <div class="card">
+      <img class="story-image" src="traffic-newest.jpg" alt="Newest Traffic Story">
+      <div class="label">TRAFFIC</div>
+      <strong>SkyTrain Service Restored After Major Morning Disruption</strong>
+      <div class="meta">May 19, 2025</div>
+      <p>SkyTrain Expo Line service is back to normal after a technical issue caused delays for thousands of commuters during rush hour.</p>
+      <a href="TRAFFICSTORY1.html" class="read-button">Read More →</a>
+    </div>
+    <div class="card">
+      <img class="story-image" src="traffic1.jpg" alt="Traffic Story 1">
+      <div class="label">TRAFFIC</div>
+      <strong>Major Delays on SkyTrain Expo Line</strong>
+      <div class="meta">May 18, 2025</div>
+      <p>Technical issues causing significant service disruptions. Shuttle buses being deployed.</p>
+      <a href="#" class="read-button">Read More →</a>
+    </div>
+    <div class="card">
+      <img class="story-image" src="traffic2.jpg" alt="Traffic Story 2">
+      <div class="label">TRAFFIC</div>
+      <strong>Weekend Road Closures for Annual Marathon</strong>
+      <div class="meta">May 18, 2025</div>
+      <p>Several downtown streets will be closed Sunday morning. Check alternate routes.</p>
+      <a href="#" class="read-button">Read More →</a>
+    </div>
+    <!-- Add more .card elements here for more traffic stories, newest at the top -->
+  </div>
+
+  <a href="Untitled-1.html#home" class="back-link">&larr; Back to Home</a>
+</body>
+</html>
